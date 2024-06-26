@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+TAS:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Playwrite+AU+TAS:wght@100..400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    height: 190vh;
+    text-align: center;
+    background: linear-gradient(to left top, rgb(216, 215, 201), rgb(255, 215, 222), rgb(255, 242, 228))
+
+}
+header{
+    width: 100%;
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+h1 {
+    font-family: "Playwrite AU TAS", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 35px;
+    font-weight: bold;
+
+
+}
+
+h1 span{
+  
+    font-family: "Libre Franklin", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+p {
+    font-family: "Libre Franklin", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin-bottom: 10px;
+}
+
+input{
+    outline: none;
+    width: 200px;
+    font-size: 15px;
+    height: 25px;
+    font-family: "Libre Franklin", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;  
+}
+
+button{
+    width: 70px; 
+    font-size: 15px;
+    height: 28px;   
+    font-family: "Libre Franklin", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;   
+}
+#images {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+#images img:not(#searchImg){
+    
+    max-width: 225px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+#images img:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px #000000;
+}
+
+#searchImg{
+    transition: all 0.3s;
+    margin-top: 100px;
+    width: 500px;
+}
+
+@media screen and (max-width: 500px){
+    #searchImg{
+       width: 400px;
+    }
+    h1{
+        font-size: 30px;
+    }
+}
+
+
+@media screen and (max-width: 450px){
+    #searchImg{
+       width: 350px;
+    }
+    h1{
+        font-size: 25px;
+    }
+}
+
+
+@media screen and (max-width: 400px){
+    #searchImg{
+       width: 300px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    p{
+        font-size: 15px;
+    }
+}
